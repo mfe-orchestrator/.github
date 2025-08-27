@@ -31,6 +31,9 @@ This project is licensed under the terms of the [MIT License](LICENSE).
 
 ---
 
+## 🚀 CI Integration
+- [Github Action](https://github.com/marketplace/actions/microfrontend-orchestrator-uploader)
+
 ### 🌐 Useful Links
 - [Main Repository](https://github.com/mfe-orchestrator-hub/mfe-orchestrator-hub)  
 - [Project Website](https://mfe-orchestrator-hub.github.io/)  
