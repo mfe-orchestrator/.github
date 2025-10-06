@@ -3,8 +3,8 @@
 **MFE Orchestrator Hub** is an open-source solution designed to simplify the orchestration and integration of **micro-frontends**.  
 It provides a centralized hub to manage multiple frontends, ensuring consistency, scalability, and developer efficiency.
 
-🔗 **Website:** [mfe-orchestrator-hub.github.io](https://mfe-orchestrator-hub.github.io/)  
-📖 **Documentation:** [mfe-orchestrator-hub.github.io/documentation](https://mfe-orchestrator-hub.github.io/documentation/)  
+🔗 **Website:** [mfe-orchestrator.dev](https://mfe-orchestrator.dev/)  
+📖 **Documentation:** [mfe-orchestrator.dev/documentation](https://mfe-orchestrator.dev/documentation/)  
 
 ---
 
@@ -17,12 +17,12 @@ It provides a centralized hub to manage multiple frontends, ensuring consistency
 ---
 
 ## 📚 Documentation
-For detailed usage, setup instructions, and advanced configurations, please check out the [official documentation](https://mfe-orchestrator-hub.github.io/documentation/).
+For detailed usage, setup instructions, and advanced configurations, please check out the [official documentation](https://mfe-orchestrator.dev/documentation/).
 
 ---
 
 ## 📦 Installation & Usage
-For installation and setup, refer to the [documentation](https://mfe-orchestrator-hub.github.io/documentation/docs/intro).
+For installation and setup, refer to the [documentation](https://mfe-orchestrator.dev/documentation/docs/intro).
 
 ---
 
@@ -39,6 +39,6 @@ This project is licensed under the terms of the [MIT License](LICENSE).
 
 
 ### 🌐 Useful Links
-- [Main Repository](https://github.com/mfe-orchestrator-hub/mfe-orchestrator-hub)  
-- [Project Website](https://mfe-orchestrator-hub.github.io/)  
-- [Documentation](https://mfe-orchestrator-hub.github.io/documentation/)
+- [Main Repository](https://github.com/mfe-orchestrator/mfe-orchestrator)  
+- [Project Website](https://mfe-orchestrator.dev/)  
+- [Documentation](https://mfe-orchestrator.devo/documentation/)
