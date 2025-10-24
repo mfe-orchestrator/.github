@@ -1,6 +1,6 @@
-# MFE Orchestrator Hub
+# MFE Orchestrator
 
-**MFE Orchestrator Hub** is an open-source solution designed to simplify the orchestration and integration of **micro-frontends**.  
+**MFE Orchestrator** is an open-source solution designed to simplify the orchestration and integration of **micro-frontends**.  
 It provides a centralized hub to manage multiple frontends, ensuring consistency, scalability, and developer efficiency.
 
 🔗 **Website:** [mfe-orchestrator.dev](https://mfe-orchestrator.dev/)  
