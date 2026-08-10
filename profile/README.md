@@ -68,6 +68,80 @@ one-click rollback.
 | [template-webcomponent-remote](https://github.com/mfe-orchestrator/template-webcomponent-remote) | Web Components remote |
 | [webcomponent-dynamic-loader](https://github.com/mfe-orchestrator/webcomponent-dynamic-loader) | Runtime loader for Web Components remotes |
 
+## Contribute
+
+MFE Orchestrator is built in the open, and there is more than one way to move it
+forward — writing TypeScript is only one of them.
+
+### Spread the word
+
+The project is young, and the hardest problem is being found by the teams who
+need it. Star the
+[main repository](https://github.com/mfe-orchestrator/mfe-orchestrator), share it
+where micro frontend problems get discussed — Reddit, Hacker News, dev.to,
+LinkedIn, your company Slack — write a post about the setup you ended up with, or
+talk about it at a meetup. If you already run micro frontends in production, a
+short honest write-up of how you release them is worth more than anything we can
+put on a landing page.
+
+### Write code
+
+Every repository listed above accepts pull requests. Good places to start:
+
+- issues labelled
+  [good first issue](https://github.com/mfe-orchestrator/mfe-orchestrator/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22)
+  and
+  [help wanted](https://github.com/mfe-orchestrator/mfe-orchestrator/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22)
+  on the platform;
+- the [documentation](https://github.com/mfe-orchestrator/documentation) — a page
+  that confused you is a page worth fixing;
+- the [templates](#the-repositories), if the framework or bundler you use is
+  missing one.
+
+The workflow is the usual fork → branch → conventional commit → pull request. The
+[contributing section of the main README](https://github.com/mfe-orchestrator/mfe-orchestrator#contributing-)
+covers the local development setup and the code quality rules the pipeline
+enforces (Biome, commitlint, Lefthook).
+
+### Build a CI/CD adapter
+
+We ship adapters for GitHub Actions, GitLab CI and Azure DevOps. Everything else
+— Jenkins, Bitbucket Pipelines, CircleCI, Buildkite, Drone, TeamCity, Woodpecker,
+Travis — is still missing, and each one unblocks every team standardised on that
+vendor.
+
+An adapter is deliberately thin: take the build output, upload it to the
+orchestrator with an API key, and let the console handle versions and
+deployments. Start from
+[manual upload](https://mfe-orchestrator.dev/documentation/docs/ci-cd/manual-upload)
+to see what the API expects, then read the
+[GitHub Action](https://github.com/mfe-orchestrator/github-action) or the
+[GitLab CI stage](https://github.com/mfe-orchestrator/gitlab-pipeline-stage) as a
+reference implementation. Open an issue on
+[.github](https://github.com/mfe-orchestrator/.github/issues) before you start so
+nobody duplicates the work — we will create the repository for you.
+
+### Test, test, test
+
+The quickest way to make the project better is to use it and report what breaks.
+Run the [quick start](https://mfe-orchestrator.dev/documentation/docs/quick-start)
+on your own stack, self-host it, push it somewhere it was not designed to go. A
+bug report with clear steps to reproduce is a real contribution.
+
+The paths that benefit most from being exercised outside our machines:
+
+- **self-hosting** — Docker Compose, Terraform / OpenTofu, Helm on your cluster,
+  SSO against your identity provider;
+- **storage backends** — AWS S3, Azure Blob, Google Cloud Storage, your CDN, or
+  fully on-premise;
+- **hosts and bundlers** — Vite and Webpack Module Federation, Web Components,
+  and whatever combination your shell actually uses;
+- **canary releases**, still experimental and hungry for real traffic.
+
+Report what you find in the repository concerned, or on
+[.github](https://github.com/mfe-orchestrator/.github/issues) if you are not sure
+which one that is.
+
 ## License
 
 The platform is licensed under
